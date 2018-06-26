@@ -1,0 +1,40 @@
+<!--
+<div class="box-body" *ngIf="tableLoaded">
+ <table  datatable [dtOptions]="dtOptions" id="csp" class="table-responsive table-bordered table-striped">
+ </table>
+</div>
+-->
+
+<div class="row">
+      <div class="col-xs-12">
+        <div class="box">
+          <div class="box-body">
+            <div class="container">
+              <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+              <thead>
+                <tr>
+                  <th>domain</th>
+                  <th>document-uri</th>
+                  <th>blocked-uri</th>
+                  <th>violated-directive</th>
+                  <th>original-policy</th>
+                  <th>date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let domain of domains">
+                  <td>{{ domain.domain }}</td>
+                  <td>{{ domain["document-uri"]}}</td>
+                  <td>{{ domain["blocked-uri"] }}</td>
+                  <td>{{ domain["violated-directive"]}}</td>
+                  <td>{{ domain["date"]}}</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+

@@ -1,0 +1,55 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <script src="js/dataTable.js"></script>
+    <!--<script src="js/chart.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+</head>
+<body>
+<div class="main-wrap">
+    <input id="slide-sidebar" type="checkbox" role="button"/>
+    <label id="th" for="slide-sidebar"><span class="glyphicon glyphicon-th-list"></span></label>
+    <div class="sidebar">
+
+        <nav class="cd-side-nav">
+            <ul>
+                <li class="cd-label">Main</li>
+                <li class="has-children overview">
+                    <a href="/">Table</a>
+
+                    <ul>
+                        <li><a href="#0">All Data</a></li>
+                        <li><a href="#0">Category 1</a></li>
+                        <li><a href="#0">Category 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-children comments">
+                    <a href="/chart">Chart</a>
+
+                    <ul>
+                        <li><a href="#0">All Comments</a></li>
+                        <li><a href="#0">Edit Comment</a></li>
+                        <li><a href="#0">Delete Comment</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="portfolio">
+        <div class="jumbotron vertical-center">
+            {{{body}}}
+        </div>
+    </div>
+</div>
+</body>
+
+
+<script src="js/chart.js"></script>

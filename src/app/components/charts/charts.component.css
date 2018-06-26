@@ -1,0 +1,24 @@
+.tableContainer{
+  width:90%;
+  overflow-x: scroll;
+  zoom:0.9;
+}
+
+.info-box{
+  margin-left: 20px;
+}
+
+.body{
+  overflow-x: scroll;
+
+
+  margin-right:15px;
+}
+
+.box{
+  width:100%;
+}
+
+
+
+
