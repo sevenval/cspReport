@@ -29,24 +29,16 @@ Run an instance with command mongod:
 $ mongod
 ```
 
-Then navigate to folder frontend and install angular cli. After that install angular project dependencies. 
+Then  install angular cli.
 
 ```
-$ cd frontend 
 $ npm install -g @angular/cli@latest
-$ npm install 
-```
-When finished, run following command to build the angular module: 
 
 ```
-$ ng build 
-```
-
-Everything is set up now! Navigate back to the root folder and Start the server with: 
+When finished, run following command to build and start application: 
 
 ```
-$ cd ../ 
-$ npm run start  
+$ npm start 
 ```
 
 type in following url to render the webpage: 
